@@ -1,0 +1,32 @@
+<div class="card">
+  <a class="product-link" [href]="link" target="_blank">
+    <img class="product-img" [src]="image" [alt]="name" />
+    <div class="title">{{ name }}</div>
+</a>
+  <div class="rate">
+    <span class="stars">{{ stars }}</span>
+    <span class="reviews">{{ reviews }}</span>
+  </div>
+  <div class="price-row">
+    <div class="price-col">
+      <div class="label">Цена</div>
+      <div class="price">{{ price }}</div>
+    </div>
+    <div class="divider"></div>
+    <div class="price-col">
+      <div class="label">В рассрочку</div>
+      <div class="installment">
+        <span class="installment-amount">{{ installment }}</span>
+        <span class="installment-count">{{ installmentCount }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="share">
+    <select class="share-select" [(ngModel)]="shareType">
+      <option value="wa">WhatsApp</option>
+      <option value="tg">Telegram</option>
+    </select>
+    <button class="share-btn" (click)="share()">Share</button>
+  </div>
+</div>
