@@ -1,0 +1,116 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="side-title">Все категории <span>(22668)</span></div>
+
+    <details class="side-section" open>
+      <summary class="side-summary">
+        <span class="chev">▾</span>
+        <span class="side-main">Продукты питания</span>
+        <span class="count">(22668)</span>
+      </summary>
+    <div class="side-list">
+      <div class="side-item" [class.active]="selectedCategoryId === 1" (click)="selectCategory(1)"><span class="play">▶</span>Молочные продукты, яйца <span class="count">(247)</span></div>
+      <div class="side-item" [class.active]="selectedCategoryId === 2" (click)="selectCategory(2)"><span class="play">▶</span>Овощи, фрукты, ягоды, грибы <span class="count">(113)</span></div>
+      <div class="side-item" [class.active]="selectedCategoryId === 3" (click)="selectCategory(3)"><span class="play">▶</span>Сладости и выпечка <span class="count">(3559)</span></div>
+      <div class="side-item" [class.active]="selectedCategoryId === 4" (click)="selectCategory(4)"><span class="play">▶</span>Крупы, хлопья, макароны <span class="count">(540)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Соки, вода, напитки <span class="count">(763)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Масла, соусы <span class="count">(652)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Консервация <span class="count">(789)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Мясо и птица <span class="count">(1171)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Сахар и заменители, соль, специи<span class="count">(1641)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Чипсы, орехи,снеки<span class="count">(158)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Колбасы, сосиски, деликатесы <span class="count">(117)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Чай, кофе, какао <span class="count">(4084)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Алкоголь <span class="count">(7989)</span></div>
+      <div class="side-item is-static"><span class="play">▶</span>Замороженные продукты, мороженое <span class="count">(361)</span></div>
+    </div>
+    </details>
+
+    <details class="side-section" open>
+      <summary class="side-summary">Цена</summary>
+      <div class="check-list">
+        <label><input type="checkbox"> до 10 000 ₸ <span class="count">(15942)</span></label>
+        <label><input type="checkbox"> 10 000 - 49 999 ₸ <span class="count">(5613)</span></label>
+        <label><input type="checkbox"> 50 000 - 99 999 ₸ <span class="count">(666)</span></label>
+        <label><input type="checkbox"> 100 000 - 149 999 ₸ <span class="count">(147)</span></label>
+        <label><input type="checkbox"> 150 000 - 199 999 ₸ <span class="count">(79)</span></label>
+        <label><input type="checkbox"> 200 000 - 499 999 ₸ <span class="count">(141)</span></label>
+        <label><input type="checkbox"> более 500 000 ₸ <span class="count">(73)</span></label>
+      </div>
+    </details>
+
+    <details class="side-section" open>
+      <summary class="side-summary">Бренд</summary>
+      <div class="check-list">
+        <label><input type="checkbox"> Coca‑Cola <span class="count">(17)</span></label>
+        <label><input type="checkbox"> MAGNUM <span class="count">(2)</span></label>
+        <label><input type="checkbox"> Milka <span class="count">(42)</span></label>
+        <label><input type="checkbox"> Джинн <span class="count">(3)</span></label>
+        <label><input type="checkbox"> Казахстан <span class="count">(4)</span></label>
+        <label><input type="checkbox"> Яшкино <span class="count">(61)</span></label>
+      </div>
+      <button class="show-more">Показать еще</button>
+    </details>
+
+    <details class="side-section" open>
+      <summary class="side-summary">Продавцы</summary>
+      <div class="check-list">
+        <label><input type="checkbox"> COFFEELOVER <span class="count">(203)</span></label>
+        <label><input type="checkbox"> Coffeemag‑kz <span class="count">(1464)</span></label>
+        <label><input type="checkbox"> Mfood kz <span class="count">(1429)</span></label>
+      </div>
+      <button class="show-more">Показать еще</button>
+    </details>
+
+    <details class="side-section" open>
+      <summary class="side-summary">Упаковка</summary>
+      <div class="check-list">
+        <label><input type="checkbox"> банка металлическая <span class="count">(543)</span></label>
+        <label><input type="checkbox"> банка стеклянная <span class="count">(565)</span></label>
+        <label><input type="checkbox"> дой‑пак <span class="count">(1847)</span></label>
+        <label><input type="checkbox"> коробка картонная <span class="count">(3371)</span></label>
+        <label><input type="checkbox"> флоу‑пак <span class="count">(2628)</span></label>
+      </div>
+      <button class="show-more">Показать еще</button>
+    </details>
+
+    <details class="side-section" open>
+      <summary class="side-summary">Страна</summary>
+      <div class="check-list">
+        <label><input type="checkbox"> Германия <span class="count">(598)</span></label>
+        <label><input type="checkbox"> Испания <span class="count">(680)</span></label>
+        <label><input type="checkbox"> Италия <span class="count">(2177)</span></label>
+        <label><input type="checkbox"> Казахстан <span class="count">(3517)</span></label>
+        <label><input type="checkbox"> Франция <span class="count">(1427)</span></label>
+      </div>
+      <button class="show-more">Показать еще</button>
+    </details>
+  </aside>
+
+  <section class="content">
+    <div class="content-top">
+      <div class="breadcrumbs"><span id="kas">Kaspi Магазин</span> <span id="productt"> → Продукты питания в Алматы</span></div>
+    </div>
+
+    <div class="toolbar">
+        <select class="sort-select">
+          <option selected>Популярные</option>
+          <option>Сначала дешевле</option>
+          <option>Сначала дороже</option>
+          <option>По рейтингу</option>
+        </select>
+      </div>
+
+    <div *ngIf="list.length === 0 && selectedCategoryId !== null" class="empty">
+      Нет товаров в этой категории
+    </div>
+
+    <div class="grid" *ngIf="list.length > 0">
+      <app-product-card
+        *ngFor="let p of list"
+        [product]="p"
+        (delete)="remove($event)">
+      </app-product-card>
+    </div>
+  </section>
+</div>

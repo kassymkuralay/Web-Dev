@@ -1,0 +1,146 @@
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  padding: 15px;
+  box-shadow: none;
+  display: grid;
+  gap: 10px;
+}
+
+.img-placeholder {
+  height: 150px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e8eef7, #f6f8fb);
+  border: 1px dashed #c7d2e2;
+}
+
+.title { font-size: 14px;  font-family: "Roboto", Helvetica, Arial, sans-serif; color: #0089d0; }
+.price { font-size: 16px;  color: #111827; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 700;}
+.rate { font-size: 12px; display: flex; gap: 6px; align-items: center; }
+.stars { color: #ef4444; }
+.reviews { color: #0089d0; }
+.stars { color: #f5690b; }
+.reviews { color: #0089d0; }
+
+.title:hover,
+.reviews:hover {
+  text-decoration: underline;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.likes .liked {
+  color: #ef4444;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+  transform: scale(1.1);
+}
+
+.like-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn {
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.price-col .label {
+  color: #9aa0a6;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.divider {
+  width: 1px;
+  height: 36px;
+  background: #e5e7eb;
+  justify-self: center;
+}
+
+.installment {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.installment-amount {
+  background: #ffdf5d;
+  padding: 2px 6px;
+  font-weight: 700;
+}
+
+.installment-count {
+  color: #9aa0a6;
+  font-weight: 700;
+}
+.product-img {
+  width: 170px;
+  height: 140px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+}
+
+.product-img {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.share {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.share-btn {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #000;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  background: #f3f4f6;
+}
+
+.share-select {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  gap: 10px;
+}

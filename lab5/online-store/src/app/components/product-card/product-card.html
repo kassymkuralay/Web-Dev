@@ -1,0 +1,28 @@
+<div class="card">
+  <a class="product-link" [href]="product.link" target="_blank">
+    <img class="product-img" [src]="product.image" [alt]="product.name" />
+    <div class="title">{{ product.name }}</div>
+  </a>
+
+  <div class="rate">
+    <span class="stars">★★★★★</span>
+    <span class="reviews">({{ product.reviews }} отзывов)</span>
+  </div>
+  <div class="price">{{ product.price }} ₸</div>
+
+  <div class="likes">
+    <button class="like-btn" (click)="like()">
+      <span [class.liked]="liked">❤ {{ product.likes }}</span>
+    </button>
+  </div>
+
+  <div class="share">
+    <select class="share-select" [(ngModel)]="shareTarget">
+      <option value="whatsapp">WhatsApp</option>
+      <option value="telegram">Telegram</option>
+    </select>
+    <button class="share-btn" (click)="onShare()">Share</button>
+  </div>
+
+  <button class="delete-btn" (click)="onDelete()">Delete</button>
+</div>
