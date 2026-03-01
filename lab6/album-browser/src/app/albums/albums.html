@@ -1,0 +1,10 @@
+<h1>Albums</h1>
+<div *ngIf="albums$ | async as albums; else loadingTpl">
+    <div *ngFor="let a of albums">
+        <a [routerLink]="['/albums', a.id]">
+            {{ a.id }} - {{ a.title}}
+        </a>
+        <button (click)="delete(a.id, albums)">Delete</button>
+    </div>
+</div>
+<ng-template #loadingTpl>List Loading...</ng-template>

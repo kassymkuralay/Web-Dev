@@ -1,0 +1,12 @@
+h1{
+    color: cornflowerblue;
+}
+p{
+    color:white;
+}
+div{
+    background-color: cornflowerblue;
+    width: 200px;
+    padding: 2px;
+    text-align: center;
+}

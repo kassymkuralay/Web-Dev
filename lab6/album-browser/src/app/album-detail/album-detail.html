@@ -1,0 +1,23 @@
+<div *ngIf="album$ | async as album; else loading">
+    <h2>Album Details</h2>
+    <p>Id: {{ album.id}}</p>
+    <p>User: {{ album.userId}}</p>
+    <p>Title: {{ album.title }}</p>
+
+    <label>
+        Title:
+        <input [(ngModel)]="editedTitle"/>
+    </label>
+    <button (click)="save()">Save</button>
+
+    <div class="btnv g">
+        <button [routerLink]="['/albums', album.id, 'photos']">View photos</button>
+    </div>
+    <div class="btn g">
+        <button routerLink="/albums">Back</button>
+    </div>
+</div>
+
+<ng-template #loading>
+    Loading... 
+</ng-template>

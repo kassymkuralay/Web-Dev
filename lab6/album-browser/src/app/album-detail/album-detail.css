@@ -1,0 +1,11 @@
+h2{
+    color: cornflowerblue;
+}
+button{
+    color: cornflowerblue;
+    margin-left: 20px;
+    padding: 4px 9px;
+}
+button:hover{
+    color: steelblue;
+}

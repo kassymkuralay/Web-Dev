@@ -1,0 +1,27 @@
+h1{
+    color:cornflowerblue;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    color:cornflowerblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    color:cornflowerblue;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: silver;
+    padding: 5px;
+    border-radius: 5px;
+}
+a:hover{
+    color: rgb(29, 116, 203);
+}
+div{
+    text-align: center;
+}

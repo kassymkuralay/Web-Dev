@@ -1,0 +1,16 @@
+<h2>Album Photos</h2>
+
+<div *ngIf="photos$ | async as photos; else loading" class="grid">
+  <div *ngFor="let p of photos">
+    <img
+      [src]="p.thumbnailUrl"
+      [alt]="p.title"
+      (error)="onImgError($event)"
+    />
+    <p>{{ p.title }}</p>
+  </div>
+</div>
+
+<ng-template #loading>Loading...</ng-template>
+
+<button [routerLink]="['/albums', albumId]">Back</button>
